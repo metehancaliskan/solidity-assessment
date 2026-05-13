@@ -1,0 +1,220 @@
+{
+  "_format": "hh-sol-cache-2",
+  "files": {
+    "/Users/metehan_caliskan/Desktop/github/solidity-assessment/contracts/IDividends.sol": {
+      "lastModificationDate": 1778656981991,
+      "contentHash": "6faba6398bdab91b7c069774f74e31ea",
+      "sourceName": "contracts/IDividends.sol",
+      "solcConfig": {
+        "version": "0.7.0",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "0.7.0"
+      ],
+      "artifacts": [
+        "IDividends"
+      ]
+    },
+    "/Users/metehan_caliskan/Desktop/github/solidity-assessment/contracts/Token.sol": {
+      "lastModificationDate": 1778658349877,
+      "contentHash": "58a8873cc3a69421d9953509a7af675d",
+      "sourceName": "contracts/Token.sol",
+      "solcConfig": {
+        "version": "0.7.0",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./IERC20.sol",
+        "./IMintableToken.sol",
+        "./IDividends.sol",
+        "./SafeMath.sol"
+      ],
+      "versionPragmas": [
+        "0.7.0"
+      ],
+      "artifacts": [
+        "Token"
+      ]
+    },
+    "/Users/metehan_caliskan/Desktop/github/solidity-assessment/contracts/IERC20.sol": {
+      "lastModificationDate": 1778656981991,
+      "contentHash": "3589b124725867bc15a8acb4a209d1f0",
+      "sourceName": "contracts/IERC20.sol",
+      "solcConfig": {
+        "version": "0.7.0",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "0.7.0"
+      ],
+      "artifacts": [
+        "IERC20"
+      ]
+    },
+    "/Users/metehan_caliskan/Desktop/github/solidity-assessment/contracts/IMintableToken.sol": {
+      "lastModificationDate": 1778656981991,
+      "contentHash": "7e18f86134814b033ca67b7a19189cb6",
+      "sourceName": "contracts/IMintableToken.sol",
+      "solcConfig": {
+        "version": "0.7.0",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "0.7.0"
+      ],
+      "artifacts": [
+        "IMintableToken"
+      ]
+    },
+    "/Users/metehan_caliskan/Desktop/github/solidity-assessment/contracts/SafeMath.sol": {
+      "lastModificationDate": 1778656981991,
+      "contentHash": "d2224c5cf7f8c3158c339bb729abf071",
+      "sourceName": "contracts/SafeMath.sol",
+      "solcConfig": {
+        "version": "0.7.0",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "0.7.0"
+      ],
+      "artifacts": [
+        "SafeMath"
+      ]
+    },
+    "/Users/metehan_caliskan/Desktop/github/solidity-assessment/contracts/Migrations.sol": {
+      "lastModificationDate": 1778656981991,
+      "contentHash": "e9b9dab4fdc48930d8fc4c6c8142e75c",
+      "sourceName": "contracts/Migrations.sol",
+      "solcConfig": {
+        "version": "0.7.0",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "0.7.0"
+      ],
+      "artifacts": [
+        "Migrations"
+      ]
+    }
+  }
+}

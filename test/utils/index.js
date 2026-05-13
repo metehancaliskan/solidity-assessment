@@ -1,5 +1,4 @@
-import web3Pkg from 'web3'
-const { utils } = web3Pkg
+import hre from 'hardhat'
 import chai from 'chai'
 import chaiAsPromised from 'chai-as-promised'
 import chaiVal from 'chai-bundle';
@@ -59,8 +58,23 @@ chai.use((_chai, utilsLib) => {
   })
 })
 
+chai.use((_chai, utilsLib) => {
+  _chai.Assertion.overwriteMethod('equal', function (_super) {
+    return function (val) {
+      const obj = utilsLib.flag(this, 'object')
+      if (typeof obj === 'bigint' || typeof val === 'bigint') {
+        const a = typeof obj === 'bigint' ? Number(obj) : obj
+        const b = typeof val === 'bigint' ? Number(val) : val
+        new _chai.Assertion(a, undefined, undefined, true).to.equal(b)
+      } else {
+        _super.apply(this, arguments)
+      }
+    }
+  })
+})
+
 chai.use(chaiVal)
 chai.use(chaiAsPromised)
 chai.should()
 
-export const getBalance = async addr => utils.toBN(await web3.eth.getBalance(addr))
+export const getBalance = async addr => hre.ethers.provider.getBalance(addr)
